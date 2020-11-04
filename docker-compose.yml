@@ -23,7 +23,4 @@ services:
       - postgres-db
     links:
       - "postgres-db:postgres-db"
-    volumes:
-      - ./scripts/wait-for-it.sh:/opt/app/wait-for-it.sh
-
     command: ["java", "-jar", "calendar-api-1.0.0.jar"]
